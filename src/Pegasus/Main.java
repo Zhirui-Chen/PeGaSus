@@ -86,7 +86,7 @@ public class Main {
         }
 
         System.out.println("\n分组数"+groupList.size());
-        System.out.println("\n划分为：");
+        System.out.println("划分为：");
         for(Group group:groupList){
             for(MetaData m :group.getMetaDataList()){
                 System.out.print(m.getTimeStamp()+" ");
