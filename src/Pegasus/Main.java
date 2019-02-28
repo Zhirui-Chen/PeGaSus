@@ -94,13 +94,13 @@ public class Main {
             System.out.println();
         }
 
-        System.out.print("\n均值平滑处理结果为：    ");
+        System.out.print("均值平滑处理结果为：    ");
         print(avgSmoothStreamData);
-        System.out.print("\n中值平滑处理结果为：    ");
+        System.out.print("中值平滑处理结果为：    ");
         print(medianSmoothStreamData);
-        System.out.print("\nJS值平滑处理结果为：    ");
+        System.out.print("JS值平滑处理结果为：    ");
         print(jsSmoothStreamData);
-        System.out.print("\n滑动窗口平滑处理结果为：");
+        System.out.print("滑动窗口平滑处理结果为：");
         print(windowSmoothStreamData);
 
 
