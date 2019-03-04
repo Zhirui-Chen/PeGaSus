@@ -10,14 +10,14 @@ public class Smoother {
      * @param lastGroup 最后一个分组，也就是当前数据所在的当前分组
      * @return 最后一个分组数据的均值
      */
-//    public static double averageSmoother(ArrayList<Integer> estimatedStreamData, Group lastGroup) {
-//        double sum = 0.0;
-//        for (MetaData metaData : lastGroup.getMetaDataList()) {
-//            sum += estimatedStreamData.get(metaData.getTimeStamp() - 1).getState();
-//        }
-//        double avg = sum / lastGroup.getMetaDataList().size();
-//        return avg;
-//    }
+    public static double averageSmoother(ArrayList<Integer> estimatedStreamData, Group lastGroup) {
+        double sum = 0.0;
+        for (int index: lastGroup.getIndexList()) {
+            sum += estimatedStreamData.get(index);
+        }
+        double avg = sum / lastGroup.getIndexList().size();
+        return avg;
+    }
 
     /**
      * 将当前数据更新为所在当前分组的中值
