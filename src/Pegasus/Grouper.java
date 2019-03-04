@@ -21,21 +21,21 @@ public class Grouper {
 
     /**
      * Grouper类的核心办法
-     * @param originDataList 输入的原始流数据（属性值未加噪）
+     * @param originCountsList 输入的原始流数据（属性值未加噪）
      * @param previousGroupList 当前已有的分组，未对当前数据分组
      * @param privacyBudget Grouper所消耗的隐私预算
      * @return  对当前数据分组后，返回现有的所有分组
      */
-    public static ArrayList<Group> grouper(ArrayList<MetaData> originDataList,
+    public static ArrayList<Group> grouper(ArrayList<Integer> originCountsList,
                                            ArrayList<Group> previousGroupList,
                                            double privacyBudget) {
         ArrayList<Group> currentGroupList ;//返回值
         Group previousLastGroup = new Group();
         Group currentlastGroup = new Group();
 
-        MetaData lastMetaData = originDataList.get(originDataList.size()-1);
-        currentlastGroup.getMetaDataList().add(lastMetaData);
-        if(1==originDataList.size()){  //当第一条数据到达时条件为true
+        int lastCount = originCountsList.get(originCountsList.size()-1);
+        currentlastGroup.getCountsList().add(lastCount);
+        if(1==originCountsList.size()){  //当第一条数据到达时条件为true
             previousLastGroup.close() ;
         }else{
             previousLastGroup = previousGroupList.get(previousGroupList.size()-1);// G
@@ -47,12 +47,12 @@ public class Grouper {
             theta = theta + Laplace.sample(4/privacyBudget);
         }else{
             theta = prevTheta;
-            previousLastGroup.getMetaDataList().add(lastMetaData);
+            previousLastGroup.getCountsList().add(lastCount);
             if(calDeviation(previousLastGroup) + Laplace.sample(8/privacyBudget)<theta){
                 currentGroupList = previousGroupList;
                 previousLastGroup.isOpen();
             }else{
-                previousLastGroup.getMetaDataList().remove(previousLastGroup.getMetaDataList().size()-1);
+                previousLastGroup.getCountsList().remove(previousLastGroup.getCountsList().size()-1);
                 previousGroupList.add(currentlastGroup);
                 currentlastGroup.close();
                 previousLastGroup.close();
@@ -71,41 +71,38 @@ public class Grouper {
     public static double calDeviation(Group group){
         //计算均值
         double sum =0.0;
-        for(MetaData metaData:group.getMetaDataList()){
-            sum += metaData.getState();
+        for(int metaData:group.getCountsList()){
+            sum += metaData;
         }
-        double avg = sum/group.getMetaDataList().size();
+        double avg = sum/group.getCountsList().size();
         //计算标准差
         double deviationValue = 0.0;
-        for(MetaData metaData:group.getMetaDataList()){
-            deviationValue +=abs(metaData.getState() - avg);
+        for(int metaData:group.getCountsList()){
+            deviationValue +=abs(metaData - avg);
         }
         return deviationValue;
     }
 
     public static void main(String[] args) {
-        ArrayList<MetaData> originDataList = new ArrayList<>();
-        MetaData metaData = new MetaData(1,1,5);
-        originDataList.add(metaData);
-        metaData = new MetaData(2,2,5);
-        originDataList.add(metaData);
-        metaData = new MetaData(3,3,6);
-        originDataList.add(metaData);
-        metaData = new MetaData(4,4,9);
-        originDataList.add(metaData);
-        metaData = new MetaData(5,5,10);
-        originDataList.add(metaData);
-        ArrayList<MetaData> inputoriginDataList = new ArrayList<>();
+        ArrayList<Integer> originCountsList = new ArrayList<>();
+
+        originCountsList.add(5);
+        originCountsList.add(5);
+        originCountsList.add(6);
+        originCountsList.add(9);
+        originCountsList.add(10);
+
+        ArrayList<Integer> inputoriginCountsList = new ArrayList<>();
         ArrayList<Group> partition = new ArrayList<>();
         Grouper.setTheta(2);
         Grouper.setPrevTheta(2);
-        for(MetaData item:originDataList){
-            inputoriginDataList.add(item);
-            partition = Grouper.grouper(inputoriginDataList,partition,0.1);
+        for(int count:originCountsList){
+            inputoriginCountsList.add(count);
+            partition = Grouper.grouper(inputoriginCountsList,partition,0.1);
         }
         for(Group group:partition){
-            for(MetaData m:group.getMetaDataList()){
-                System.out.println(m.getTimeStamp());
+            for(int count:group.getCountsList()){
+                System.out.println(count);
             }
             System.out.println();
         }

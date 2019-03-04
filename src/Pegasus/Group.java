@@ -7,16 +7,16 @@ import java.util.ArrayList;
  */
 
 public class Group{
-    private ArrayList<MetaData> metaDataList;//维护分组内的数据
+    private ArrayList<Integer> countsList;//维护分组内的数据
     private boolean open;//维护该分组打开或关闭的状态变量
 
     public Group(){
-        metaDataList = new ArrayList<>();
+        countsList = new ArrayList<>();
         open = false;
     }
 
-    public ArrayList<MetaData> getMetaDataList() {
-        return metaDataList;
+    public ArrayList<Integer> getCountsList() {
+        return countsList;
     }
 
     public void open() {

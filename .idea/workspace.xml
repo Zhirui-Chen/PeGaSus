@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40dd8b58-0337-493b-8f28-c4649a65fc9b" name="Default" comment="">
+    <list default="true" id="40dd8b58-0337-493b-8f28-c4649a65fc9b" name="Default" comment="有四种平滑处理的PeGaSus算法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pegasus/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pegasus/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pegasus/Grouper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pegasus/Grouper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pegasus/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pegasus/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pegasus/Smoother.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pegasus/Smoother.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,85 +18,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Grouper.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Grouper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Pegasus/Grouper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="247">
+              <caret line="104" column="40" selection-start-line="104" selection-start-column="40" selection-end-line="104" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#218#219#0" expanded="true" />
-                <element signature="e#255#256#0" expanded="true" />
-                <element signature="e#312#313#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
+                <element signature="docComment;method#grouper#0;class#Grouper#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Laplace.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pegasus/Laplace.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Group.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pegasus/Group.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-165">
-              <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-              <folding>
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#380#381#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Perturber.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pegasus/Perturber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MetaData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pegasus/MetaData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Pegasus/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Smoother.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pegasus/Smoother.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -112,7 +46,6 @@
       <find>theta</find>
       <find>group.groupList</find>
       <find>groupList</find>
-      <find>metaDataList</find>
       <find>latestGroup</find>
       <find>userId</find>
       <find>metaData</find>
@@ -123,6 +56,14 @@
       <find>partitions</find>
       <find>lastMetaDataGroup</find>
       <find>partition</find>
+      <find>MetaData</find>
+      <find>inputoriginCountsList</find>
+      <find>currentlastGroup</find>
+      <find>lastCount</find>
+      <find>countsList</find>
+      <find>lastIndex</find>
+      <find>getMetaDataList</find>
+      <find>metaDataList</find>
     </findStrings>
     <replaceStrings>
       <replace>userId</replace>
@@ -137,6 +78,14 @@
       <replace>groupList</replace>
       <replace>lastGroup</replace>
       <replace>currentGroupList</replace>
+      <replace>originCountsList</replace>
+      <replace>inputCountsList</replace>
+      <replace>currentLastGroup</replace>
+      <replace>getIndexList</replace>
+      <replace>indexList</replace>
+      <replace>lastIndex</replace>
+      <replace>getCountsList</replace>
+      <replace>countsList</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -157,13 +106,13 @@
         <option value="$PROJECT_DIR$/src/main/Smoother.java" />
         <option value="$PROJECT_DIR$/src/main/Pegasus.java" />
         <option value="$PROJECT_DIR$/src/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/Pegasus/Group.java" />
         <option value="$PROJECT_DIR$/src/Pegasus/Laplace.java" />
         <option value="$PROJECT_DIR$/src/Pegasus/MetaData.java" />
         <option value="$PROJECT_DIR$/src/Pegasus/Perturber.java" />
-        <option value="$PROJECT_DIR$/src/Pegasus/Grouper.java" />
-        <option value="$PROJECT_DIR$/src/Pegasus/Smoother.java" />
         <option value="$PROJECT_DIR$/src/Pegasus/Main.java" />
+        <option value="$PROJECT_DIR$/src/Pegasus/Smoother.java" />
+        <option value="$PROJECT_DIR$/src/Pegasus/Group.java" />
+        <option value="$PROJECT_DIR$/src/Pegasus/Grouper.java" />
       </list>
     </option>
   </component>
@@ -190,7 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,17 +151,24 @@
               <item name="Pegasus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Pegasus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pegasus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Pegasus" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DataX-Masking" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaProjects/PeGaSus/PeGaSus" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -238,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Grouper">
     <configuration name="Grouper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Pegasus.Grouper" />
       <module name="Pegasus" />
@@ -344,10 +299,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Grouper" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Perturber" />
         <item itemvalue="Application.Smoother" />
-        <item itemvalue="Application.Grouper" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
@@ -364,7 +319,9 @@
       <updated>1551057420942</updated>
       <workItem from="1551057425457" duration="17322000" />
       <workItem from="1551143814102" duration="50740000" />
-      <workItem from="1551316298917" duration="16197000" />
+      <workItem from="1551316298917" duration="16983000" />
+      <workItem from="1551429063490" duration="904000" />
+      <workItem from="1551663256206" duration="3898000" />
     </task>
     <task id="LOCAL-00001" summary="用idea上传的第一个可运行版本，类的设计很可能需要修改">
       <created>1551248320023</created>
@@ -429,14 +386,22 @@
       <option name="project" value="LOCAL" />
       <updated>1551360304308</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="有四种平滑处理的PeGaSus算法">
+      <created>1551361410146</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1551361410146</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84259000" />
+    <option name="totallyTimeSpent" value="89847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="9" />
@@ -446,10 +411,10 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.49926794" weight="0.19117647" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49853587" weight="0.41339868" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="5" visible="true" weight="0.46732026" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.49853587" visible="true" weight="0.13235295" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.09640523" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16792738" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12178517" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.18228404" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -465,15 +430,15 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" visible="true" weight="0.095168374" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.49853587" visible="true" weight="0.25078863" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.49926794" weight="0.01577287" />
+      <window_info anchor="bottom" id="Message" order="8" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1317716" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.18228404" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.49853587" visible="true" weight="0.25078863" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3967789" />
@@ -481,13 +446,13 @@
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="bottom" id="Terminal" order="5" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5014641" side_tool="true" visible="true" weight="0.25078863" />
-      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.49926794" weight="0.01577287" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.47401574" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3280757" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +480,8 @@
     <MESSAGE value="做好了滑动窗口平滑处理" />
     <MESSAGE value="添加注释和修改完善代码" />
     <MESSAGE value="添加注释和修改完善代码。同时输出四种平滑处理结果，便于直观地比较" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加注释和修改完善代码。同时输出四种平滑处理结果，便于直观地比较" />
+    <MESSAGE value="有四种平滑处理的PeGaSus算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="有四种平滑处理的PeGaSus算法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -525,14 +491,133 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Pegasus/Grouper.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2508">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#grouper#0;class#Grouper#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Laplace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Perturber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/MetaData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Smoother.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Grouper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#grouper#0;class#Grouper#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Laplace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Perturber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/MetaData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Smoother.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Grouper.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
+            <element signature="docComment;method#grouper#0;class#Grouper#0" />
           </folding>
         </state>
       </provider>
@@ -541,16 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="44" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="44" />
-          <folding>
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,10 +690,7 @@
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
+            <element signature="docComment;method#grouper#0;class#Grouper#0" />
           </folding>
         </state>
       </provider>
@@ -632,83 +704,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Develop/Java/jdk1.8.0_171/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="460" column="19" selection-start-line="460" selection-start-column="19" selection-end-line="460" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/StreamData.java" />
     <entry file="file://$PROJECT_DIR$/src/Pegasus/Test.java" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pegasus/Group.java">
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Perturber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="418">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pegasus/Laplace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state relative-caret-position="232">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pegasus/MetaData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+        <state relative-caret-position="845">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pegasus/Perturber.java">
+    <entry file="jar://C:/Develop/Java/jdk1.8.0_171/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pegasus/Grouper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="143">
+          <caret line="460" column="19" selection-start-line="460" selection-start-column="19" selection-end-line="460" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pegasus/Smoother.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        <state relative-caret-position="154">
+          <caret line="12" selection-start-line="12" selection-start-column="2" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pegasus/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="110">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pegasus/Grouper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="104" column="40" selection-start-line="104" selection-start-column="40" selection-end-line="104" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#grouper#0;class#Grouper#0" />
           </folding>
         </state>
       </provider>
