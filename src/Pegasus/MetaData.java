@@ -14,13 +14,13 @@ public class MetaData{
         state = s;
     }
 
-//    public void setUserId(int userId) {
-//        this.userId = userId;
-//    }
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
 
-//    public void setTimeStamp(int timeStamp) {
-//        this.timeStamp = timeStamp;
-//    }
+    public void setTimeStamp(int timeStamp) {
+        this.timeStamp = timeStamp;
+    }
 
     public void setState(double state) {
         this.state = state;
@@ -38,18 +38,8 @@ public class MetaData{
         return state;
     }
 
-//    public void print(){
-//        System.out.println("userId:"+userId
-//                +";timestamp:"+timeStamp+";state:"+state);
-//    }
-
-    /**
-     * 深拷贝一个MetaData对象
-     * @param metaData
-     * @return
-     */
-    public static MetaData copy(MetaData metaData){
-        MetaData copyMetaData = new MetaData(metaData.getUserId(),metaData.getTimeStamp(),metaData.getState());
-        return copyMetaData;
+    public void print(){
+        System.out.println("userId:"+userId
+                +";timestamp:"+timeStamp+";state:"+state);
     }
 }

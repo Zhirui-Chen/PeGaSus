@@ -31,18 +31,18 @@ public class Grouper {
                                            double privacyBudget) {
         ArrayList<Group> currentGroupList ;//返回值
         Group previousLastGroup = new Group();
-        Group currentlastGroup = new Group();
+        Group currentLastGroup = new Group();
 
         int lastCountIndex = originCountsList.size()-1;
-        currentlastGroup.getIndexList().add(lastCountIndex);
+        currentLastGroup.getIndexList().add(lastCountIndex);
         if(1==originCountsList.size()){  //当第一条数据到达时条件为true
             previousLastGroup.close() ;
         }else{
             previousLastGroup = previousGroupList.get(previousGroupList.size()-1);// G
         }
         if(!previousLastGroup.isOpen()){// Algorithm 2:line 6 if G has been closed
-            previousGroupList.add(currentlastGroup);
-            currentlastGroup.open();
+            previousGroupList.add(currentLastGroup);
+            currentLastGroup.open();
             currentGroupList = previousGroupList;
             theta = theta + Laplace.sample(4/privacyBudget);
         }else{
@@ -53,8 +53,8 @@ public class Grouper {
                 previousLastGroup.isOpen();
             }else{
                 previousLastGroup.getIndexList().remove(previousLastGroup.getIndexList().size()-1);
-                previousGroupList.add(currentlastGroup);
-                currentlastGroup.close();
+                previousGroupList.add(currentLastGroup);
+                currentLastGroup.close();
                 previousLastGroup.close();
                 currentGroupList = previousGroupList;
             }
