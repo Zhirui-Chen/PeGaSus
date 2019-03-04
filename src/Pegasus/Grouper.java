@@ -33,8 +33,8 @@ public class Grouper {
         Group previousLastGroup = new Group();
         Group currentlastGroup = new Group();
 
-        int lastCount = originCountsList.get(originCountsList.size()-1);
-        currentlastGroup.getCountsList().add(lastCount);
+        int lastCountIndex = originCountsList.size()-1;
+        currentlastGroup.getIndexList().add(lastCountIndex);
         if(1==originCountsList.size()){  //当第一条数据到达时条件为true
             previousLastGroup.close() ;
         }else{
@@ -47,12 +47,12 @@ public class Grouper {
             theta = theta + Laplace.sample(4/privacyBudget);
         }else{
             theta = prevTheta;
-            previousLastGroup.getCountsList().add(lastCount);
-            if(calDeviation(previousLastGroup) + Laplace.sample(8/privacyBudget)<theta){
+            previousLastGroup.getIndexList().add(lastCountIndex);
+            if(calDeviation(originCountsList ,previousLastGroup) + Laplace.sample(8/privacyBudget)<theta){
                 currentGroupList = previousGroupList;
                 previousLastGroup.isOpen();
             }else{
-                previousLastGroup.getCountsList().remove(previousLastGroup.getCountsList().size()-1);
+                previousLastGroup.getIndexList().remove(previousLastGroup.getIndexList().size()-1);
                 previousGroupList.add(currentlastGroup);
                 currentlastGroup.close();
                 previousLastGroup.close();
@@ -68,17 +68,17 @@ public class Grouper {
      * @param group 分组
      * @return
      */
-    public static double calDeviation(Group group){
+    public static double calDeviation(ArrayList<Integer> countsList, Group group){
         //计算均值
         double sum =0.0;
-        for(int metaData:group.getCountsList()){
-            sum += metaData;
+        for(int index:group.getIndexList()){
+            sum += countsList.get(index);
         }
-        double avg = sum/group.getCountsList().size();
+        double avg = sum/group.getIndexList().size();
         //计算标准差
         double deviationValue = 0.0;
-        for(int metaData:group.getCountsList()){
-            deviationValue +=abs(metaData - avg);
+        for(int index:group.getIndexList()){
+            deviationValue +=abs(countsList.get(index) - avg);
         }
         return deviationValue;
     }
@@ -101,8 +101,8 @@ public class Grouper {
             partition = Grouper.grouper(inputoriginCountsList,partition,0.1);
         }
         for(Group group:partition){
-            for(int count:group.getCountsList()){
-                System.out.println(count);
+            for(int index:group.getIndexList()){
+                System.out.println(index+1);
             }
             System.out.println();
         }
