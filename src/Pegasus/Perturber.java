@@ -14,7 +14,13 @@ public class Perturber {
      */
     public static double perturber(double originValue,double privateBudget){
         double noise = Laplace.sample(privateBudget);
-        return originValue+noise;
+        double result = originValue+noise;
+        if(result<0){
+            result = 0;
+        }else if(result>200){
+            result = 200;
+        }
+        return result;
     }
 
 
